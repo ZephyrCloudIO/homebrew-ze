@@ -1,7 +1,6 @@
 class ZeHarness < Formula
   desc "Terminal-based AI agent harness"
   homepage "https://ze.dev"
-  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
