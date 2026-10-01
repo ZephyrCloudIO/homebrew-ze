@@ -24,6 +24,9 @@ class ZeHarness < Formula
   end
 
   def install
+    # Node's macOS runtime floor is 13.5, not every Ventura point release.
+    odie "ze-harness requires macOS 13.5 or newer" if OS.mac? && MacOS.version < "13.5"
+
     bin.install "ze-harness"
     prefix.install "LICENSE", "THIRD_PARTY_LICENSES.txt"
   end
