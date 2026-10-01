@@ -4,21 +4,22 @@ class ZeHarness < Formula
   license "Apache-2.0"
 
   on_macos do
+    depends_on arch: :arm64
     depends_on macos: :ventura
     on_arm do
-      url "https://downloads.ze.dev/releases/v0.4.0/ze-harness-v0.4.0-aarch64-apple-darwin.zip"
-      sha256 "940c4017301c69668e9b732b84ec18a4c1147c704d1923b0bcec79658eba1a02"
+      url "https://downloads.ze.dev/releases/v0.5.1/ze-harness-v0.5.1-aarch64-apple-darwin.zip"
+      sha256 "767945a82df29c7e48096c19fbe3bcbf720d233e519983e5a9cfa75b387c955b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://downloads.ze.dev/releases/v0.4.0/ze-harness-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8df027e7dc7e27f115bf52f61b29c825d5d43689b29cab8aa019dde44f378ba2"
+      url "https://downloads.ze.dev/releases/v0.5.1/ze-harness-v0.5.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a34121ae92cb98bf8a245dedebec2dc51e0555cef13384d3448886a0810eb52e"
     end
     on_arm do
-      url "https://downloads.ze.dev/releases/v0.4.0/ze-harness-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "aa67e925badda6d1bf9855aeda2f34c2e5c12f59d19713dabd21ef7a0b6636ae"
+      url "https://downloads.ze.dev/releases/v0.5.1/ze-harness-v0.5.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9bc68613c1afb4a4e6046a3dff4d395532c59ae517af443a1a419b4e8e4ad23e"
     end
   end
 
